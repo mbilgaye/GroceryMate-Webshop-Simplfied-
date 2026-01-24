@@ -1,8 +1,8 @@
 # Test Reporting — GroceryMate Webshop (New Features)
 
-System Under Test: https://grocerymate.masterschool.com  
-Tested By: QA Engineer  
-Test Date: 2026-01-19  
+**System Under Test:** https://grocerymate.masterschool.com  
+**Tested By:** QA Engineer  
+**Test Date:** 2026-01-19  
 
 ---
 
@@ -156,8 +156,6 @@ As a user, I expect search results to display all matching products.
 - Incorrect pricing and shipping behavior
 - Multiple UI and data classification issues
 
-All issues are documented with screenshots in the **Identified Issues** file.
-
 ---
 
 ## Test Evidence
@@ -195,5 +193,6 @@ All issues are documented with screenshots in the **Identified Issues** file.
 ### Screenshot 11 – Incomplete Search Results
 ![Screenshot 11](test-evidence/screenshots/11. Search doesn't display all the items belonging to that category.png)
 
+---
 
 **End of Test Report**
