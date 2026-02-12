@@ -64,13 +64,14 @@ The application should implement its own password strength validation.
 ---
 
 ## Status
-❌ FAIL
+FAIL
+
+## Evidence
+Screenshot 01
 
 ---<img width="1532" height="1022" alt="1  Asking for a strong password" 
      src="https://github.com/user-attachments/assets/21ee89fc-1d1a-476e-8765-4d7c1ce53c1a" />
 
-## Evidence
-Screenshot 01
 
 ---
 ---
@@ -139,7 +140,7 @@ This breaks the primary shopping flow.
 ---
 
 ## Status
-❌ FAIL
+FAIL
 
 ---
 
@@ -216,7 +217,7 @@ The filtering logic is not applied properly.
 ---
 
 ## Status
-❌ FAIL
+FAIL
 
 ---
 
@@ -227,3 +228,79 @@ Screenshot 03
 
 ---
 ---
+
+# GroceryMate – Defect Report
+
+## Issue 04 — Fruits Displayed Under Vegetables Category (Incorrect Product Classification)
+
+---
+
+### Test Environment
+System: GroceryMate Webshop  
+Environment: Staging  
+
+### Test User
+Role: Registered User  
+Account Type: Test Account  
+
+---
+
+## Severity
+Medium
+
+## Priority
+Medium
+
+## Type
+Data / Catalog Classification Defect
+
+---
+
+## Description
+Products that belong to the Fruits category are incorrectly listed under the "Fresh Vegetables" category.
+
+This indicates improper product classification or missing category separation in the catalog.
+
+Fruits and vegetables should be organized into their respective categories for accurate browsing and filtering.
+
+---
+
+## Steps to Reproduce
+1. Navigate to Shop page
+2. Open "Fresh Vegetables" category
+3. Observe listed products
+
+---
+
+## Expected Result
+- Only vegetable products displayed
+- Fruits appear under a separate "Fruits" category
+
+---
+
+## Actual Result
+- Fruit products (e.g., apples) shown in Vegetables category
+- No proper category separation
+
+---
+
+## Impact
+- Confusing navigation
+- Poor user experience
+- Incorrect filtering/search behavior
+- Reduces catalog accuracy and professionalism
+
+---
+
+## Status
+FAIL
+
+---
+
+## Evidence
+Screenshot 04
+<img width="1697" height="922" alt="4  Fruits are available in vegetable category, no separate category for fruits" src="https://github.com/user-attachments/assets/585ab8f8-0356-4e90-bdf5-5a56eabd32af" />
+
+---
+---
+
