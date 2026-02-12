@@ -304,3 +304,79 @@ Screenshot 04
 ---
 ---
 
+# GroceryMate – Defect Report
+
+## Issue 05 — Missing Product Image in Product Listing
+
+---
+
+### Test Environment
+System: GroceryMate Webshop  
+Environment: Staging  
+
+### Test User
+Role: Registered User  
+Account Type: Test Account  
+
+---
+
+## Severity
+Low
+
+## Priority
+Medium
+
+## Type
+UI / Content Defect
+
+---
+
+## Description
+One or more products in the catalog are displayed without an image.
+
+The product card shows a blank or broken image area instead of the expected product photo.
+
+Product images are essential for identification and purchasing decisions.
+
+---
+
+## Steps to Reproduce
+1. Navigate to Shop/Product listing page
+2. Scroll through product catalog
+3. Observe product cards
+
+---
+
+## Expected Result
+- Every product displays a valid image
+- No broken or empty image placeholders
+
+---
+
+## Actual Result
+- Product displayed without image
+- Visual placeholder or blank space shown
+
+---
+
+## Impact
+- Poor user experience
+- Reduced product clarity
+- Lower customer trust
+- Potential decrease in conversions
+
+---
+
+## Status
+FAIL
+
+---
+
+## Evidence
+Screenshot 05
+
+<img width="1080" height="427" alt="5  Absent photo for web store purchaser" src="https://github.com/user-attachments/assets/a60475c0-3012-4d38-aa76-86135ec44800" />
+
+---
+---
+
