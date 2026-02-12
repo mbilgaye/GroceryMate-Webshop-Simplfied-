@@ -66,7 +66,8 @@ The application should implement its own password strength validation.
 ## Status
 ❌ FAIL
 
----<img width="1532" height="1022" alt="1  Asking for a strong password" src="https://github.com/user-attachments/assets/21ee89fc-1d1a-476e-8765-4d7c1ce53c1a" />
+---<img width="1532" height="1022" alt="1  Asking for a strong password" 
+     src="https://github.com/user-attachments/assets/21ee89fc-1d1a-476e-8765-4d7c1ce53c1a" />
 
 
 
