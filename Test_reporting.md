@@ -195,4 +195,94 @@ As a user, I expect search results to display all matching products.
 
 ---
 
+# GroceryMate – Test Execution Report
+
+## Screenshot 01 — Maximum Star Rating Submission (5 Stars)
+
+---
+
+### Test Environment
+System: GroceryMate Webshop
+URL: https://grocerymate.masterschool.com
+Environment: Staging
+
+### Test User
+Role: Registered User
+Account Type: Test Account
+
+---
+
+### Test Type
+Functional Testing
+
+### Test Technique
+Boundary Value Analysis (Upper Boundary)
+
+---
+
+## Test Scenario
+Verify that the system accepts the maximum allowed rating value (5 stars).
+
+---
+
+## Preconditions
+- User logged in with valid test account
+- Product detail page open
+
+---
+
+## Test Data
+Rating = 5
+
+---
+
+## Steps to Reproduce
+1. Open product page
+2. Select 5-star rating
+3. Click Submit
+
+---
+
+## Expected Result
+- Rating accepted
+- Rating saved successfully
+- Rating reflected in product rating summary
+- Rating count updated
+- No validation error displayed
+
+---
+
+## Actual Result
+- 5-star rating displayed correctly
+- Rating submitted successfully
+- Rating count updated
+- No error observed
+
+---
+
+## Status
+✅ PASS
+
+---
+
+## Severity
+Low
+
+## Priority
+Medium
+
+---
+
+## Notes
+System correctly handles the upper boundary value for ratings.  
+No defects detected.
+
+---
+
+## Evidence
+Screenshot 01
+
+
+
+
 **End of Test Report**
