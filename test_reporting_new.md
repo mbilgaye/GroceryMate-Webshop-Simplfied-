@@ -24,3 +24,5 @@ As a user of GroceryMate, I am able to give the product the rating of 1 star.
 | 10    | Click on pears   | Redirected to product page  | OK     | https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47990  |               |
 | 11  | Selected 1 Star rating   | 1 star is filled in | OK     |   |               |
 | 12  | Click the send button   | Can see the rating & you already reviewed the product message is displayed| OK     | /store  |    
+## Evidence Screenshot
+<img width="1202" height="975" alt="Product rated to 1" src="https://github.com/user-attachments/assets/c94bf50c-5b01-4c2a-9d5a-aa7223c9cdcd" />
