@@ -1,64 +1,78 @@
-# Product Rating System
-### Scenario 1: Give minimum rating
-
-As a user of GroceryMate, I am able to give the product the rating of 1 star.
-
-| Step# | Action                        | Expected outcome                   | OK/NOK | URL                      | Link to issue |
-|-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
-| 1     | Go to login page of GroceryMate     | Login page appears           | OK     | https://grocerymate.masterschool.com/ |               |
-| 2a    | Filled the username asdf@example.com              |                | OK     |                     |               |
-| 2b    | Fill the password - AsDfGh        |                                | OK     |                          |               |
-| 3     | Click Sighin | The user successfully logged in to the homepage      | OK    |                          |               |
-| 4    | Click on the Shop button        | Navigated to store pages          | OK     | /store                   |                |
-| 5    | Selected pears - click add to card | Message displayed -item added to the cart | OK  |                          |               |
-| 6    | Click cart icon | Navigates to check out page                       | OK  | /checkout                         |               |
-| 7a    | Fill the street- ABC  | | OK  |                          |               |
-| 7b    | Fill the address - Berlin   |  | OK     |   |               |
-| 7c    | Fill the post code - 12345   |  | OK     |   |               |
-| 7d    | Fill the card number - 12345   |  | OK     |   |               |
-| 7e    | Fill the name on card  - Abc   |  | OK     |   |               |
-| 7f    | Fill the card expiration date - 12/2032   |  | OK     |   |               |
-| 7g    | Fill the card CVV - 123   |  | OK     |   |               |
-| 8    | Click Buy Now icon   | Redirected to Homepage  | OK     |   |               |
-| 9  | click on Shop button   | Rediredted to shop page | OK     | /store  |               |
-| 10    | Click on pears   | Redirected to product page  | OK     | https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47990  |               |
-| 11  | Selected 1 Star rating   | 1 star is filled in | OK     |   |               |
-| 12  | Click the send button   | Can see the rating & you already reviewed the product message is displayed| OK     | /store  |    
-## Evidence Screenshot
-<img width="1202" height="975" alt="Product rated to 1" src="https://github.com/user-attachments/assets/c94bf50c-5b01-4c2a-9d5a-aa7223c9cdcd" />
+# ⭐ Product Rating System
 
 ---
+
+## 📌 Scenario 1: Give Minimum Rating (1 Star)
+
+**User Story:**  
+As a user of GroceryMate, I am able to give a product a rating of **1 star**.
+
 ---
 
+### Test Steps
 
-### Scenario 2: Submit review with text
+| Step # | Action | Expected Outcome | Status | URL | Issue |
+|--------|--------|-----------------|--------|------|--------|
+| 1 | Go to the login page of GroceryMate | Login page appears | OK | https://grocerymate.masterschool.com/ | |
+| 2a | Enter username: `asdf@example.com` | Username accepted | OK | | |
+| 2b | Enter password: `AsDfGh` | Password accepted | OK | | |
+| 3 | Click **Sign In** | User is successfully logged in and redirected to homepage | OK | | |
+| 4 | Click **Shop** button | Navigated to store page | OK | `/store` | |
+| 5 | Select **Pears** → Click **Add to Cart** | Message displayed: *Item added to cart* | OK | | |
+| 6 | Click cart icon | Navigated to checkout page | OK | `/checkout` | |
+| 7a | Enter street: `ABC` | Field accepted | OK | | |
+| 7b | Enter city: `Berlin` | Field accepted | OK | | |
+| 7c | Enter postal code: `12345` | Field accepted | OK | | |
+| 7d | Enter card number: `12345` | Field accepted | OK | | |
+| 7e | Enter name on card: `Abc` | Field accepted | OK | | |
+| 7f | Enter expiration date: `12/2032` | Field accepted | OK | | |
+| 7g | Enter CVV: `123` | Field accepted | OK | | |
+| 8 | Click **Buy Now** | Redirected to homepage | OK | | |
+| 9 | Click **Shop** button | Redirected to store page | OK | `/store` | |
+| 10 | Click **Pears** | Redirected to product page | OK | https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47990 | |
+| 11 | Select **1 Star rating** | 1 star is highlighted | OK | | |
+| 12 | Click **Send** button | Rating visible & message displayed: *You already reviewed this product* | OK | `/store` | |
 
-As a user of GroceryMate, I am able to give the product the rating of 1 star and a short text.
+---
 
-| Step# | Action                        | Expected outcome                   | OK/NOK | URL                      | Link to issue |
-|-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
-| 1     | Go to login page of GroceryMate     | Login page appears           | OK     | https://grocerymate.masterschool.com/ |               |
-| 2a    | Filled the username asdf@example.com              |                | OK     |                     |               |
-| 2b    | Fill the password - AsDfGh        |                                | OK     |                          |               |
-| 3     | Click Sighin | The user successfully logged in to the homepage      | OK    |                          |               |
-| 4    | Click on the Shop button        | Navigated to store pages          | OK     | /store                   |                |
-| 5    | Selected Lemon loaf cake - click add to card | Message displayed -item added to the cart | OK  |                          |               |
-| 6    | Click cart icon | Navigates to check out page                       | OK  | /checkout                         |               |
-| 7a    | Fill the street- ABC  | | OK  |                          |               |
-| 7b    | Fill the address - Berlin   |  | OK     |   |               |
-| 7c    | Fill the post code - 12345   |  | OK     |   |               |
-| 7d    | Fill the card number - 12345   |  | OK     |   |               |
-| 7e    | Fill the name on card  - Abc   |  | OK     |   |               |
-| 7f    | Fill the card expiration date - 12/2032   |  | OK     |   |               |
-| 7g    | Fill the card CVV - 123   |  | OK     |   |               |
-| 8    | Click Buy Now icon   | Redirected to Homepage  | OK     |   |               |
-| 9  | click on Shop button   | Rediredted to shop page | OK     | /store  |               |
-| 10    | Click on Lemon loaf cake   | Redirected to product page  | OK     |  https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb479f9)  |               |
-/store  |    
-| 11  | Selected 1 Star rating   | 1 star is filled in | OK     |   |               |
-| 12  | Write the comment - Between good and bad |  | OK     |   |               |
-| 13  | Hit send button   | The rating and text shown | NOK     |   |               |
+### 📷 Evidence Screenshot
 
-## Evidence Screenshot
-<img width="1276" height="1000" alt="Screenshot for Comments not working" src="https://github.com/user-attachments/assets/b17eb9eb-a0e8-48a2-8a13-c2effa6d897a" />
+![Product rated to 1](https://github.com/user-attachments/assets/c94bf50c-5b01-4c2a-9d5a-aa7223c9cdcd)
 
+---
+
+---
+
+## 📌 Scenario 2: Submit Review with Text
+
+**User Story:**  
+As a user of GroceryMate, I am able to give a product a **1 star rating with a short review text**.
+
+---
+
+### Test Steps
+
+| Step # | Action | Expected Outcome | Status | URL | Issue |
+|--------|--------|-----------------|--------|------|--------|
+| 1 | Go to the login page of GroceryMate | Login page appears | OK | https://grocerymate.masterschool.com/ | |
+| 2a | Enter username: `asdf@example.com` | Username accepted | OK | | |
+| 2b | Enter password: `AsDfGh` | Password accepted | OK | | |
+| 3 | Click **Sign In** | User successfully logged in | OK | | |
+| 4 | Click **Shop** button | Navigated to store page | OK | `/store` | |
+| 5 | Select **Lemon Loaf Cake** → Click **Add to Cart** | Message displayed: *Item added to cart* | OK | | |
+| 6 | Click cart icon | Navigated to checkout page | OK | `/checkout` | |
+| 7a | Enter street: `ABC` | Field accepted | OK | | |
+| 7b | Enter city: `Berlin` | Field accepted | OK | | |
+| 7c | Enter postal code: `12345` | Field accepted | OK | | |
+| 7d | Enter card number: `12345` | Field accepted | OK | | |
+| 7e | Enter name on card: `Abc` | Field accepted | OK | | |
+| 7f | Enter expiration date: `12/2032` | Field accepted | OK | | |
+| 7g | Enter CVV: `123` | Field accepted | OK | | |
+| 8 | Click **Buy Now** | Redirected to homepage | OK | | |
+| 9 | Click **Shop** button | Redirected to store page | OK | `/store` | |
+| 10 | Click **Lemon Loaf Cake** | Redirected to product page | OK | https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb479f9 | |
+| 11 | Select **1 Star rating** | 1 star is highlighted | OK | | |
+| 12 | Write comment: `Between good and bad` | Comment text entered successfully | OK | | |
+| 13 | Click **Send** button | Rating and review displayed successfully | OK | `/store` | |
+
+---
