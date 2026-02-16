@@ -241,10 +241,45 @@ As a user of GroceryMate, I am **not able to write feedback exceeding 500 charac
 ---
 
 
-## 📌 Scenario 7: Verify Written Feedback Exceeding Maximum Character Limit of 500 Character
-
+## 📌 Scenario 7: Verify Age Verification prompt when accessing alcohol strategy
 **User Story:**  
-As a user of GroceryMate, I am **not able to write feedback exceeding 500 character limit**.
+As a user of GroceryMate, **the website is generating age verification prompt whn accessing alcohol atrategy**.
+
+---
+
+### Test Steps
+
+| Step # | Action | Expected Outcome | Status | URL | Issue |
+|--------|--------|-----------------|--------|------|--------|
+| 1 | Go to the login page of GroceryMate | Login page appears | OK | https://grocerymate.masterschool.com/ | |
+| 2a | Enter username: `asdf@example.com` | Username accepted | OK | | |
+| 2b | Enter password: `AsDfGh` | Password accepted | OK | | |
+| 3 | Click **Sign In** | User successfully logged in | OK | | |
+| 4 | Age verification prompt appears |  | OK |Entered age 16-02-2008 | Age is exactly 18 years |
+| 5 | Click **Submit** | Age is accepted | OK | | |
+| 6 | Click **Sign In** | User successfully logged in | OK | | |
+| 7 | Click **Shop** button | Navigated to store page | OK | `/store` | |
+| 8 | Select **Sotma Strawberry & Lime Cider** → Click **Add to Cart** | Message displayed: *Item added to cart* | OK | | |
+| 9 | Click cart icon | Navigated to checkout page | OK | `/checkout` | |
+| 10a | Enter street: `ABC` | Field accepted | OK | | |
+| 10b | Enter city: `Berlin` | Field accepted | OK | | |
+| 10c | Enter postal code: `12345` | Field accepted | OK | | |
+| 10d | Enter card number: `12345` | Field accepted | OK | | |
+| 10e | Enter name on card: `Abc` | Field accepted | OK | | |
+| 10f | Enter expiration date: `12/2032` | Field accepted | OK | | |
+| 10g | Enter CVV: `123` | Field accepted | OK | | |
+| 8 | Click **Buy Now** | Redirected to homepage | OK | | |
+
+---
+### Evidence Screenshot
+<img width="1460" height="592" alt="3  Age entered to 18 years" src="https://github.com/user-attachments/assets/4026d372-acd3-46bd-83e5-2fd35e3ca4ce" />
+
+---
+---
+
+## 📌 Scenario 8: Verify access grant at minimum allowed age (= 18) 
+**User Story:**  
+As a user of GroceryMate, **the website is allowing purchase of alochom at exactly age = 18**.
 
 ---
 
@@ -267,6 +302,28 @@ As a user of GroceryMate, I am **not able to write feedback exceeding 500 charac
 ---
 
 
+## 📌 Scenario 9: Verify access for users above mimimum age (> 18)
+**User Story:**  
+As a user of GroceryMate, **the website is allowing purchase of alochom above minimum age > 18**.
 
+---
+
+### Test Steps
+
+| Step # | Action | Expected Outcome | Status | URL | Issue |
+|--------|--------|-----------------|--------|------|--------|
+| 1 | Go to the login page of GroceryMate | Login page appears | OK | https://grocerymate.masterschool.com/ | |
+| 2a | Enter username: `asdf@example.com` | Username accepted | OK | | |
+| 2b | Enter password: `AsDfGh` | Password accepted | OK | | |
+| 3 | Click **Sign In** | User successfully logged in | OK | | |
+| 4 | Age verification prompt appears |  | OK |Entered age 16-02-2008 | Age is exactly 18 years |
+| 5 | Click **Sign In** | User successfully logged in | OK | | |
+
+---
+### Evidence Screenshot
+<img width="1460" height="592" alt="3  Age entered to 18 years" src="https://github.com/user-attachments/assets/4026d372-acd3-46bd-83e5-2fd35e3ca4ce" />
+
+---
+---
 
 
