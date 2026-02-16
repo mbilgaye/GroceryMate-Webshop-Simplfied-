@@ -194,3 +194,79 @@ As a user of GroceryMate, I am able to give a product a **1 star rating with a s
 | 13 | Click **Send** button | Rating and review displayed successfully | OK | `/store` | |
 
 ---
+### Evidence Screenshot
+<img width="391" height="906" alt="2  Boundry Value Rating 1" src="https://github.com/user-attachments/assets/f0e6e007-ed5c-4dd3-8193-c0fe35b527fa" />
+
+---
+--- 
+
+
+## 📌 Scenario 6: Verify Written Feedback Exceeding Maximum Character Limit of 500 Character
+
+**User Story:**  
+As a user of GroceryMate, I am **not able to write feedback exceeding 500 character limit**.
+
+---
+
+### Test Steps
+
+| Step # | Action | Expected Outcome | Status | URL | Issue |
+|--------|--------|-----------------|--------|------|--------|
+| 1 | Go to the login page of GroceryMate | Login page appears | OK | https://grocerymate.masterschool.com/ | |
+| 2a | Enter username: `asdf@example.com` | Username accepted | OK | | |
+| 2b | Enter password: `AsDfGh` | Password accepted | OK | | |
+| 3 | Click **Sign In** | User successfully logged in | OK | | |
+| 4 | Click **Shop** button | Navigated to store page | OK | `/store` | |
+| 5 | Select **Sotma Strawberry & Lime Cider** → Click **Add to Cart** | Message displayed: *Item added to cart* | OK | | |
+| 6 | Click cart icon | Navigated to checkout page | OK | `/checkout` | |
+| 7a | Enter street: `ABC` | Field accepted | OK | | |
+| 7b | Enter city: `Berlin` | Field accepted | OK | | |
+| 7c | Enter postal code: `12345` | Field accepted | OK | | |
+| 7d | Enter card number: `12345` | Field accepted | OK | | |
+| 7e | Enter name on card: `Abc` | Field accepted | OK | | |
+| 7f | Enter expiration date: `12/2032` | Field accepted | OK | | |
+| 7g | Enter CVV: `123` | Field accepted | OK | | |
+| 8 | Click **Rating heart symbol** | Message displayed **Item added to favourite** | OK | | |
+| 9 | Click **Favourite Icon** button | Redirected to store page | OK | `/store/fav` | |
+| 10 | Click **Sotma Strawberry & Lime Cider** | Redirected to product page | OK | (https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47a7b)| |
+| 11 | Select **Add a comment** | Write a comment | OK | | |
+| 12 | Write comment: `Enter text exceeding 500 characters` | Comment text rejected | OK | | |
+
+---
+### 📷 Evidence Screenshot
+
+<img width="772" height="962" alt="3  Rating text not allowed above 500 characters" src="https://github.com/user-attachments/assets/b78820f3-695d-4cba-9f00-9dbf31571143" />
+
+---
+---
+
+
+## 📌 Scenario 7: Verify Written Feedback Exceeding Maximum Character Limit of 500 Character
+
+**User Story:**  
+As a user of GroceryMate, I am **not able to write feedback exceeding 500 character limit**.
+
+---
+
+### Test Steps
+
+| Step # | Action | Expected Outcome | Status | URL | Issue |
+|--------|--------|-----------------|--------|------|--------|
+| 1 | Go to the login page of GroceryMate | Login page appears | OK | https://grocerymate.masterschool.com/ | |
+| 2a | Enter username: `asdf@example.com` | Username accepted | OK | | |
+| 2b | Enter password: `AsDfGh` | Password accepted | OK | | |
+| 3 | Click **Sign In** | User successfully logged in | OK | | |
+| 4 | Age verification prompt appears |  | OK |Entered age 16-02-2008 | Age is exactly 18 years |
+| 5 | Click **Sign In** | User successfully logged in | OK | | |
+
+---
+### Evidence Screenshot
+<img width="1460" height="592" alt="3  Age entered to 18 years" src="https://github.com/user-attachments/assets/4026d372-acd3-46bd-83e5-2fd35e3ca4ce" />
+
+---
+---
+
+
+
+
+
